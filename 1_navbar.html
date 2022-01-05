@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+</head>
+<body>
+  
+  <header>
+    <div class="navbar">
+      <img class="logo" src="/liberec_logo.png" alt="">
+      <nav> 
+        <ul>
+          <li> <a href="#">Home</a></li>
+          <li> <a href="#">About</a></li>
+          <li> <a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<style>
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  background: gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  height: 30px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.navbar ul li a:hover {
+  color: green;
+}
+
+
+
+</style>
+  
+</body>
+</html>
