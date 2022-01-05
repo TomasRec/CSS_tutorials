@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrázek s překrytím</title>
+</head>
+<body>
+  <h1>Obrázek s překrytím:</h1>
+
+  <div id="container">
+    <div class="container-content">
+      <h1>Vítejte na této stránce...</h1>
+      <p>Zde naleznete....</p>
+    </div>
+  </div>
+  
+ 
+</body>
+
+<style>
+
+#container {
+  background: url("/obrazek_prekryti.jpg") no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-content {
+  color: white;
+  text-align: center;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+</style>
+</html>

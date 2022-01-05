@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrázek s překrytím</title>
+</head>
+<body>
+  <h1>Obrázek s tmavým podkladem a opacity</h1>
+    
+  <header id="showcase">
+      <div class="showcase-container">
+          <div class="showcase-content">
+            <h1>Vítejte na této stránce...</h1>
+            <p>Tady se dozvíte...</p>
+          </div>
+      </div>
+  </header>
+
+<style>
+
+#showcase {
+  color: white;
+  background: black;
+  position: relative;
+  height: 500px;
+}
+
+#showcase:before {
+  content: "";
+  background: url(/obrazek_prekryti.jpg) no-repeat center center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-container {
+  display: grid;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+
+
+</body>
+</html>
